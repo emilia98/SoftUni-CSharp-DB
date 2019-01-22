@@ -1,0 +1,15 @@
+USE "SoftUni";
+
+CREATE TABLE "Employees"(
+	Id INT PRIMARY KEY IDENTITY(1, 1),
+	FirstName NVARCHAR(50) NOT NULL,
+	MiddleName NVARCHAR(50) NOT NULL,
+	LastName NVARCHAR(50) NOT NULL,
+	JobTitle NVARCHAR(100) NOT NULL,
+	DepartmentId INT FOREIGN KEY REFERENCES Departments(Id),
+	HireDate DATE NULL,
+	Salary DECIMAL(10, 2) NOT NULL,
+	AddressId INT FOREIGN KEY REFERENCES Addresses(Id)
+);
+
+SELECT * FROM "Employees";

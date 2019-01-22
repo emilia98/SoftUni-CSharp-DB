@@ -1,3 +1,6 @@
+/*
+****** Problem 3 -> Add foreign key to table ******
+*/
 USE Minions
 
 ALTER TABLE Minions
