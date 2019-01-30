@@ -1,0 +1,1 @@
+SELECT REPLACE('My bad text', 'bad', 'awesome');

@@ -1,0 +1,3 @@
+﻿SELECT DATALENGTH('Пешо');
+
+SELECT DATALENGTH(N'Пешо');

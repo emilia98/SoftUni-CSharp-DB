@@ -1,0 +1,4 @@
+Concat -> if we have null value, it will ignore it, 
+but will add  the separator
+
+Concat_WS -> if we have null value, it will ignore it, but will ignore the separator too
