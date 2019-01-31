@@ -1,0 +1,33 @@
+use 'SOftuni'
+
+select
+concat_ws(', ', LastName, FirstName) as Employee
+, DATEdIFF(YEAR, HireData, GetDate()) as [Years In Service]
+From Employees
+ORDER BY Employee
+
+SELECT [Name],
+ISNULL(CAST(EndDate AS varchar)
+, 'Not Finished')
+FROM Projects
+
+SELECT [Name],
+COALESCE(CAST(EndDate AS varchar)
+, 'Not Finished')
+FROM Projects
+
+SELECT 
+COALESCE(NULL,NULL, 'First', NULL, NULL, 'Second');
+
+
+
+Select EOMONTH(GETDATE(), 1);
+SELECT HireDate
+, DateAdd(day, 5, HireDate) As Exp
+From Employees;
+Select DATENAME(weekday, GetDate())
+
+
+
+
+
