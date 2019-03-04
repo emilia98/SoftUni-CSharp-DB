@@ -1,0 +1,9 @@
+way to prevent
+Ado.net allows us to
+use parameterized queries
+
+It's not reccomaneded
+to use Escaping "Special" charaters for one query
+
+
+SqlParameter
